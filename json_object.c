@@ -205,7 +205,7 @@ struct json_object *json_object_get(struct json_object *jso)
 int json_object_put(struct json_object *jso)
 {
 	if (!jso)
-		return 0;
+		return 0; // lihan9
 
 	/* Avoid invalid free and crash explicitly instead of (silently)
 	 * segfaulting.
